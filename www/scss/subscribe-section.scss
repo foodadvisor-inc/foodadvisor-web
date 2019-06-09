@@ -1,0 +1,131 @@
+#subscribe-section {
+    height: auto;
+    width: 100%;
+
+    h1 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 41px;
+
+        color: #2A2E36;
+    }
+
+    span {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #808080;
+    }
+
+    h4 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 19px;
+
+        color: #211D1D;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #sub-content {
+        width: 45%;
+        height: auto;
+        margin-top: 10em;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        #sub-title {
+            margin-bottom: 3em;
+        }
+
+        #sub-text {
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+
+        #sub-btn {
+
+            //looks like title btn for additional file!!
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                width: 14em;
+                height: 3em;
+                background: $btn-color;
+                box-shadow: 0px 11px 22px rgba(40, 61, 85, 0.511181);
+                border-radius: 100px;
+                text-align: center;
+
+                transition-duration: 2ms;
+                span {
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: white;
+                }
+                background-image: linear-gradient(to top right, #184E68 0%, rgb(38, 145, 107) 35% , #57CA85 100%)
+            }
+
+            a:hover{
+                transition-duration: 250ms;
+                //background: #20688b;
+            }
+
+            a:active{
+                transition-duration: 250ms;
+                box-shadow: 0px 11px 22px rgba(78, 60, 60, 0);
+            }
+            
+        }
+
+        #sub-btn:hover{
+            transition: 250ms;
+            transform: translateY(-5px); 
+            background-position: right center; /* change the direction of the change here */
+        }
+
+        #sub-btn:active{
+            transition: 250ms;
+            transform: translateY(5px); 
+        }
+    }
+
+    #about-nure {
+        margin-top: 6em;
+        width: 40%;
+        height: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+
+        margin-bottom: 3em;
+
+        #nure-title {}
+
+        #nure-logo {
+            margin-top: 2em;
+            img {
+                width: 64px;
+                height: 64px;
+            }
+        }
+    }
+}

@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+
+#main-section {
+    width: 100%;
+    max-width: 100%;
+    height: 120vh;
+    max-height: 120vh;
+    background: linear-gradient(#57CA85, #184E68);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    #main-nav {
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+
+        #logo-and-title-side {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 45%;
+            height: auto;
+
+            #logo-and-title-block {
+                width: auto;
+                height: auto;
+
+                margin-right: 6.5em;
+
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 300;
+                font-size: 28px;
+                line-height: 26px;
+                color: white;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+        }
+
+        #section-btns-side {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1; //Attention!
+            height: auto;
+            z-index: 10;
+
+            #section-btns-block {
+                width: 35%;
+                height: auto;
+
+                a {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: white;
+                }
+
+                display: flex;
+
+                .section-btn {
+                    width: 5em;
+                }
+
+            }
+        }
+    }
+
+
+    #main-content {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+
+        #main-text-side {
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #text-content-block {
+                margin-bottom: 3em;
+                margin-left: 6em;
+
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                #text-block-title {
+                    text-align: center;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 82px;
+                    color: white;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                    margin-bottom: 0.6em;
+                }
+
+                #text-block-body {
+                    width: 95%;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: 100;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #F6F6F6;
+
+                    margin-bottom: 2em;
+                }
+
+                #text-block-btn {
+                    width: 90%;
+                    z-index: 10;
+                    //looks like title btn for additional file!!
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        width: 14em;
+                        height: 3em;
+                        background: $btn-color;
+                        box-shadow: 0px 13px 20px #283D55;
+                        border-radius: 100px;
+                        text-align: center;
+
+
+                        span {
+                            font-family: Open Sans;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: white;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+
+        //looks very carefully when adaptive this!!
+        #main-phone-side {
+            width: 49%;
+            height: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #content-phone-block {
+                position: relative;
+                width: auto;
+                height: auto;
+                //border-radius: 40%;
+
+                -webkit-box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.8);
+                -moz-box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.8);
+                box-shadow: 0px 0px 45px 5px rgba(0, 0, 0, 0.8);
+
+                margin-right: 8em;
+
+                #phone-body {
+                    width: auto;
+
+                    //WATCH ADAPTIVE
+                    height: 500px; //Attention when recode on adaptive v.
+                    width: 205px;
+                    right: 20px;
+                    bottom: 15px;
+                    //END WATCH ADAPTIVE
+                    position: relative;
+
+                    z-index: 1;
+
+                    #img-of-phone-body {
+                        height: 525px;
+                    }
+
+                    #phone-screen {
+                        position: absolute;
+                        z-index: -1;
+                        top: 30px;
+                        left: 8px;
+
+                        img {
+                            width: 230px;
+                            height: 470px;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    //decor
+    #decor-main-empty-circle {
+        position: absolute;
+        width: 768px;
+        height: 768px;
+        left: 60%;
+        bottom: 500px;
+
+        background: white;
+        mix-blend-mode: normal;
+        opacity: 0.1;
+        border-radius: 100%;
+        z-index: 1;
+    }
+
+    #decor-wawes{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        z-index: 1;
+
+        #decor-white-wawe{
+            position: absolute;
+            width: 100%;
+            //bottom: 0px;
+        }
+        #decor-halfwhite-wawe-b{
+            width: 100%;
+            position: absolute;
+
+            top: -130px;
+
+            color: white;
+            mix-blend-mode: normal;
+            opacity: 0.1;
+        }
+
+        #decor-halfwhite-wawe-s{
+            width: 100%;
+            position: absolute;
+
+            top: -100px;
+
+            color: white;
+            mix-blend-mode: normal;
+            opacity: 0.1;
+        }
+    }
+
+}

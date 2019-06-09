@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$title-font-color : #2A2E36;
+$text-font-color: #95979A;
+
+
+#second-section {
+    margin-top: 50px; 
+    //border: 1px solid red;
+    height: auto;
+    width: 100%;
+    z-index: 1;
+
+    .decor-buble {
+        height: 54px;
+        width: 54px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.0576596);
+        z-index: 10;
+    }
+
+    .section2-text {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $text-font-color;
+    }
+
+    .section2-btn {
+        width: auto;
+        margin-top: 2em;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 10.5em;
+            height: 2.5em;
+            background: $btn-color;
+            box-shadow: 0px 11px 22px rgba(40, 61, 85, 0.5);
+            border-radius: 100px;
+            text-align: center;
+
+
+            span {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 12px;
+                line-height: 14px;
+                color: white;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .section2-text-block-wrap {
+        width: 28em;
+        margin-left: 1em;
+
+        #section2-text-block-title {
+            margin-top: 1em;
+        }
+
+        #section2-text-block-text {
+            margin-top: 1em;
+        }
+
+    }
+
+    h3 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        color: $title-font-color;
+    }
+
+
+    #first-half-of-content {
+        height: auto;
+        min-height: 540px;
+        display: flex;
+        justify-content: center;
+
+        .left-content-side {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            #content-block {
+                margin-left: 80px;
+                position: relative;
+
+                width: 261px;
+                height: 536px;
+
+                #first-phone-screen {
+                    position: absolute;
+                    width: auto;
+                    height: auto;
+
+                    z-index: 10;
+
+                    img {
+                        width: 261px;
+                        height: 536px;
+                        box-shadow: 0px 7px 48px rgba(0, 0, 0, 0.26738);
+                    }
+                }
+
+                #decor-for-second-section-first-phone-screen {
+                    position: absolute;
+                    z-index: 1;
+                    top: 100px;
+                    left: 65px;
+
+                    img {
+                        width: 331px;
+                        height: 331px;
+                    }
+                }
+            }
+        }
+
+
+        .right-content-side {
+            width: 49.9%;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+        }
+    }
+
+    #second-half-of-content {
+        height: 600px;
+        min-height: 540px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+        .left-content-side {
+            width: 50%;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .section2-text-block-wrap {
+                width: 25em;
+                margin-right: 5em;
+            }
+        }
+
+
+        .right-content-side {
+            width: 49.9%;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            #content-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                //margin-right: 200px;
+
+            }
+
+            #second-phone-screen {
+                height: 547px;
+                width: 253px;
+                #recipe-screen {
+                    position: absolute;
+                    z-index: 10;
+                    box-shadow: 0px 7px 48px rgba(0, 0, 0, 0.26738);
+                    margin-right: 20px;
+
+                }
+            }
+
+            #third-phone-screen{
+                height: 420px;
+                width: 194px;
+                #ingridient-screen {
+                    position: absolute;
+                    left: 42px;
+                    z-index: 5;
+                    box-shadow: 0px 7px 48px rgba(0, 0, 0, 0.26738);
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "foodadvisor-web",
+  "version": "1.0.0",
+  "description": "foodadvisor-web",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-grid-only-css": "^4.1.3",
+    "gulp": "^4.0.1",
+    "gulp-cli": "^2.2.0"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foodadvisor-inc/foodadvisor-web.git"
+  },
+  "author": "VadyaZombieBoiiiiiii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foodadvisor-inc/foodadvisor-web/issues"
+  },
+  "homepage": "https://github.com/foodadvisor-inc/foodadvisor-web#readme"
+}

@@ -1,0 +1,37 @@
+$color: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$btn-color: #57B37B;
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 4000px;
+    width: 101%;
+    background-color: $color;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import 'custom-scrollbar.scss';
+@import 'main-section.scss';
+@import 'second-section.scss';
+@import 'other-features-section';
+@import 'price-section';
+@import 'subscribe-section';
